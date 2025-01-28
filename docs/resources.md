@@ -8,3 +8,4 @@
 - [How to protect an API in FastAPI with Auth0 by Okta](https://www.youtube.com/watch?v=1aha4yrT2l0)
 - [How to Create a Minecraft Server Container Image | Create Your Custom Minecraft Image with Docker](https://www.youtube.com/watch?v=ne3YOEBEi6Q)
 - [Docker Minecraft Server](https://github.com/itzg/docker-minecraft-server)
+- [AWS SDK for Python (Boto3)](https://aws.amazon.com/sdk-for-python/)
