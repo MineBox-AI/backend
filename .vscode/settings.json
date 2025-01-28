@@ -1,0 +1,25 @@
+{
+  "editor.insertSpaces": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "ruff.configuration": "ruff.toml",
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
