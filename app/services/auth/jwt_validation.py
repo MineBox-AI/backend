@@ -1,5 +1,6 @@
 import jwt
-from config import settings
+
+from app.config import settings
 
 
 class VerifyToken:
@@ -16,7 +17,7 @@ class VerifyToken:
             "ALGORITHMS": settings.AUTH0_ALGORITHMS,
         }
 
-        jwks_url = f'https://{self.config["DOMAIN"]}/.well-known/jwks.json'
+        jwks_url = f"https://{self.config['DOMAIN']}/.well-known/jwks.json"
         self.jwks_client = jwt.PyJWKClient(jwks_url)
 
     def verify(self):

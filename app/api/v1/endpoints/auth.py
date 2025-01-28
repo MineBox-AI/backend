@@ -1,12 +1,15 @@
-from app.services.auth.jwt_validation import VerifyToken
 from fastapi import APIRouter, Depends, Response, status
 from fastapi.security import HTTPBearer
+
+from app.services.auth.jwt_validation import VerifyToken
+from app.utils.logger import create_log
 
 router = APIRouter()
 
 
 @router.get("/public")
 def public(response: Response):
+    create_log("info", "Public Endpoint")
     result = {"status": "success"}
     return result
 

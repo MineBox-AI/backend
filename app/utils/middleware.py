@@ -1,9 +1,10 @@
-from app.services.auth.jwt_validation import VerifyToken
-from constants import PUBLIC_ENDPOINTS
 from fastapi.requests import Request
 from fastapi.responses import JSONResponse
-from response import error_response
 from starlette.middleware.base import BaseHTTPMiddleware
+
+from app.constants import PUBLIC_ENDPOINTS
+from app.services.auth.jwt_validation import VerifyToken
+from app.utils.response import error_response
 
 
 class TokenVerificationMiddleware(BaseHTTPMiddleware):
