@@ -1,0 +1,11 @@
+--  TABLE CREATION SCRIPTS
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(16) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- SEEDING SCRIPTS
+
+INSERT INTO users (username, email) VALUES ('user1', 'user1@gmail.com');

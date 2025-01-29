@@ -1,16 +1,20 @@
 # import os
 
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.v1.router import api_router
 from app.config import settings
+from app.integrations.database.client import create_db_and_tables
 from app.utils.logger import create_log
 from app.utils.middleware import TokenVerificationMiddleware
 from app.utils.response import success_response
 
 
 def create_app() -> FastAPI:
+    create_db_and_tables()
+
     app = FastAPI(title=settings.PROJECT_NAME, version=settings.VERSION)
 
     app.add_middleware(

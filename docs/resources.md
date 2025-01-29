@@ -9,3 +9,6 @@
 - [How to Create a Minecraft Server Container Image | Create Your Custom Minecraft Image with Docker](https://www.youtube.com/watch?v=ne3YOEBEi6Q)
 - [Docker Minecraft Server](https://github.com/itzg/docker-minecraft-server)
 - [AWS SDK for Python (Boto3)](https://aws.amazon.com/sdk-for-python/)
+- [Auth0 Actions](https://auth0.com/docs/customize/actions)
+- [Using SQL database with FastAPI](https://fastapi.tiangolo.com/tutorial/sql-databases/)
+- [SQLModel](https://sqlmodel.tiangolo.com)
